@@ -9,10 +9,10 @@
 from slackclient import SlackClient
 import pandas as pd
 
-SLACK_BOT_TOKEN = 'xoxb-483237336743-488112887538-W6SSWCFdGbtqc9xhgt4ksBUN'
+SLACK_BOT_TOKEN = 'xxxx'
 slack_client = SlackClient(SLACK_BOT_TOKEN)
 
-users = slack_client.api_call("users.list",channel="#class-discussions")
+users = slack_client.api_call("users.list",channel="#yyy")
 df = pd.DataFrame(columns=['id','name','email','phone'])
 
 row = []
